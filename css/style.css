@@ -1,0 +1,179 @@
+/* Global Styling  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif; 
+    margin: 20px; 
+    background-color:lightgray; 
+    color: black;
+} 
+
+p b {
+    font-size: large; 
+    font-weight:bolder; 
+    color: maroon; 
+} 
+
+.title { 
+    font-size: medium; 
+    text-decoration: underline; 
+} 
+
+.subheading { 
+    font-size: medium; 
+    font-weight: bold; 
+}
+
+/* Style for each contact row */ 
+
+.contact-item { 
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 10px; 
+}
+
+/* Style for icons */ 
+.icon { 
+    width: 24px; 
+    height: 24px; 
+    margin-right: 10px; 
+    float: right;
+    margin-left: 20px;
+}
+
+/* Remove default <p> margins */ 
+
+.contact-item p { 
+    margin: 0; 
+}
+
+/* Horizontal line styling */ 
+
+hr { 
+    border: none; 
+    border-top: 2px solid #000000; 
+    margin: 5px 0 10px 0; 
+}
+
+/* List styling */ 
+
+ul { 
+    list-style-type: disc; 
+    margin-left: 20px; 
+}
+
+/* sub-lists */ 
+
+ul ul { 
+    list-style-type: circle; 
+    margin-left: 20px; 
+}
+
+/*home page styling*/ 
+
+.header { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+h1 { 
+    margin: 0; 
+    color: maroon; 
+} 
+
+h2 { 
+    margin: 5px 0; 
+    font-size: 18px; 
+    font-weight: normal; 
+    color:gray;
+} 
+
+.home-img { 
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%; 
+    border: 2px solid black;
+    float: right;
+    margin-left: 20px; 
+} 
+
+.clearfix {
+    clear: both;
+}
+
+
+.more-about {
+    color: maroon; 
+    font-weight: bold; 
+}
+
+/* Navigation Links on Home Page */ 
+.nav-links { 
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+    display: flex;          /* makes items horizontal */
+    gap: 20px; 
+} 
+
+.nav-links li {
+    margin: 0; 
+}
+
+.nav-links a { 
+    text-decoration: none; 
+    color: #1a73e8; /* blue */ 
+    font-weight: bold; 
+} 
+
+.nav-links a:hover { 
+    color: maroon; 
+    text-decoration: underline; 
+}
+
+/*Gallery*/ 
+.gallery {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    overflow: hidden; /* contain floats */
+}
+
+/* Figure container */
+.gallery figure {
+    float: left;              /* make figures sit side by side */
+    width: 300px;             /* fixed width for each block */
+    margin: 10px;             /* space around each figure */
+    text-align: center;       /* center caption under image */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    background: #f9f9f9;
+}
+
+/* Images */
+.gallery img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #45151B; /* Chocolate Kisses */
+    border-radius: 10px;
+}
+
+/* Captions */
+.gallery figcaption {
+    margin-top: 8px;
+    font-size: 14px;
+    color: gray;
+}
+
+/* Clear floats after gallery */
+.gallery::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
